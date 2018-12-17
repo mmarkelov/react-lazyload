@@ -240,7 +240,11 @@ class LazyLoad extends Component {
   }
 
   shouldComponentUpdate() {
-    return this.visible;
+    return this.visible || this.props.forceUpdate;
+  }
+
+  componentDidUpdate() {
+    (checkVisible(this));
   }
 
   componentWillUnmount() {
@@ -279,6 +283,7 @@ class LazyLoad extends Component {
 
 LazyLoad.propTypes = {
   once: PropTypes.bool,
+  forceUpdate: PropTypes.bool,
   height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   offset: PropTypes.oneOfType([PropTypes.number, PropTypes.arrayOf(PropTypes.number)]),
   overflow: PropTypes.bool,
@@ -294,6 +299,7 @@ LazyLoad.propTypes = {
 
 LazyLoad.defaultProps = {
   once: false,
+  forceUpdate: false,
   offset: 0,
   overflow: false,
   resize: false,

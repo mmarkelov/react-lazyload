@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory, Link } from 'react-router';
 
 import Decorator from './pages/decorator';
+import FlipMove from './pages/flip';
 import Normal from './pages/normal';
 import Scroll from './pages/scroll';
 import Overflow from './pages/overflow';
@@ -21,6 +22,7 @@ const Home = () => (
     <li><Link to="/debounce">using <code>debounce</code></Link></li>
     <li><Link to="/placeholder">custom placeholder</Link></li>
     <li><Link to="/fadein">cool <code>fadeIn</code> effect</Link></li>
+    <li><Link to="/flip-move">using with <code>FlipMove</code> effect</Link></li>
   </ul>
 );
 
@@ -35,6 +37,7 @@ const routes = (
     <Route path="/debounce" component={Debounce} />
     <Route path="/placeholder" component={Placeholder} />
     <Route path="/fadein" component={FadeIn} />
+    <Route path="/flip-move" component={FlipMove} />
   </Router>
 );
 

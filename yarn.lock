@@ -3501,6 +3501,11 @@ react-dom@^16:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-flip-move@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-flip-move/-/react-flip-move-3.0.3.tgz#3065b0b9e622ae73953aba725f8feed8e4643667"
+  integrity sha512-gR2jvjUgIXI7ceFWJkr8owX4vKhV0IJoXIf/Dt7gESFe5OKiSz2H6d10mKTW8fN134NDI16J4HgEgq9pKqJd5A==
+
 react-hot-api@^0.4.5:
   version "0.4.7"
   resolved "http://registry.npm.taobao.org/react-hot-api/download/react-hot-api-0.4.7.tgz#a7e22a56d252e11abd9366b61264cf4492c58171"
